@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hamdin Gamal | Electrical Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+
+<style>
+:root{
+  --bg:#06070a; --card:#0f1218; --muted:#a6b0bb; --text:#e6eef6;
+  --accent:#00d4ff; --accent-2:#6ee7b7; --accent-3:#7c4dff;
+  --radius:12px; --shadow:0 12px 40px rgba(3,8,20,.6);
+  --max-width:1200px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;font-family:Inter;background:#06070a; color:var(--text);}
+body{
+  background: linear-gradient(270deg, #0f1218, #06070a, #0f1218);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+}
+@keyframes gradientBG{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.container{max-width:var(--max-width);margin:40px auto;padding:20px; display:flex; gap:20px;}
+.left{flex:3; display:flex; flex-direction:column; gap:20px;}
+.right{flex:1; display:flex; flex-direction:column; gap:20px;}
+
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow);transition:transform .2s ease, box-shadow .2s ease}
+
+.h1{margin:0;font-size:28px;font-weight:800}
+.h3{margin:0;font-size:16px;color:var(--muted);margin-bottom:12px;}
+.h2{margin:0 0 12px;font-size:18px}
+.small{font-size:13px;color:var(--muted)}
+
+.skills span{
+  display:inline-block;
+  padding:6px 10px;
+  margin:4px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.06);
+  font-size:13px;
+}
+
+.timeline .item{margin-bottom:12px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.project img{width:100%;height:120px;object-fit:cover;border-radius:8px;transition: transform .3s ease, box-shadow .3s ease}
+.project:hover img{transform:scale(1.05);box-shadow:0 12px 30px rgba(0,212,255,.4)}
+
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cert-grid .card, .gallery-item {
+  display:flex; flex-direction:column; align-items:center; text-align:center; transition: transform .3s ease, box-shadow .3s ease;
+}
+.cert-grid img, .gallery-item img{
+  max-width:100%; border-radius:8px; margin-bottom:6px; transition: transform .3s ease, box-shadow .3s ease;
+}
+.cert-grid .card:hover img, .gallery-item:hover img{
+  transform: scale(1.05); box-shadow:0 12px 30px rgba(0,212,255,.4);
+}
+.cert-grid strong, .gallery-item strong{font-weight:600;margin-bottom:4px;color:var(--text)}
+.cert-grid .small, .gallery-item .small{font-size:12px;color:var(--muted)}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+
+.avatar img{width:100%;border-radius:12px}
+
+.btn-primary{
+  display:inline-block; padding:10px 18px; border-radius:12px;
+  background:linear-gradient(90deg,#00d4ff,#6ee7b7);
+  color:#06070a; font-weight:700; text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,212,255,.4);
+  transition:transform .2s ease; text-align:center;
+}
+.btn-primary:hover{transform:scale(1.05);}
+
+@media(max-width:900px){
+  .container{flex-direction:column;}
+  .projects{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .projects,.gallery{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- Left Column -->
+<div class="left">
+
+<!-- Name & Title Above About -->
+<div class="card" style="text-align:center;">
+  <h1 class="h1">Hamdin Gamal</h1>
+  <h3 class="h3">Electrical Power Engineer — LV Distribution • MEP • BIM</h3>
+</div>
+
+<!-- About -->
+<div class="card">
+  <h2 class="h2">About</h2>
+  <p class="small">
+    Electrical Power Engineer with strong EPC background in LV distribution,
+    MEP design, ELV systems, panel building, tendering, BIM and IEC standards.
+    Experienced in site execution, technical office work, and professional training delivery.
+  </p>
+</div>
+
+<!-- Experience -->
+<div class="card">
+  <h2 class="h2">Experience</h2>
+  <div class="timeline">
+    <div class="item small"><strong>Electrical Site Engineer</strong> – Dar Al-Kahrabaa (2025–Present)</div>
+    <div class="item small"><strong>Training Branch Manager</strong> – DK Training Center (2024)</div>
+    <div class="item small"><strong>Technical Office Engineer</strong> – Part-time / Freelance</div>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="card">
+  <h2 class="h2">Projects</h2>
+  <div class="projects">
+    <div class="project card">
+      <img src="images/project1.jpg">
+      <strong>Hospital LV & ELV Design</strong>
+      <div class="small">Complete electrical system design & BOQ.</div>
+    </div>
+    <div class="project card">
+      <img src="images/project2.jpg">
+      <strong>4T4 Mall – New Capital</strong>
+      <div class="small">LV & ELV systems, shop drawings.</div>
+    </div>
+    <div class="project card">
+      <img src="images/project3.jpg">
+      <strong>BIM Office Building</strong>
+      <div class="small">Revit MEP modeling & coordination.</div>
+    </div>
+    <div class="project card">
+      <img src="images/project4.jpg">
+      <strong>ITC Project</strong>
+      <div class="small">Electrical design and site execution – New Capital.</div>
+    </div>
+    <div class="project card">
+      <img src="images/project5.jpg">
+      <strong>HSR Project – Marsa Matruh Station</strong>
+      <div class="small">Electric Express Train – full LV/ELV execution.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Certificates -->
+<div class="card">
+  <h2 class="h2">Certificates</h2>
+  <div class="cert-grid">
+    <div class="card"><img src="images/cert1.jpg"><strong>Round 17 Certification</strong></div>
+    <div class="card"><img src="images/cert2.jpg"><strong>Round 19 Brunch Manager</strong></div>
+    <div class="card"><img src="images/cert3.jpg"><strong>Round 21-Round 1 BIM-E-MIND Manager</strong></div>
+    <div class="card"><img src="images/cert4.jpg"><strong>Certified BIM Management</strong></div>
+    <div class="card"><img src="images/cert5.jpg"><strong>Certified BIM Documenter</strong></div>
+    <div class="card"><img src="images/cert6.jpg"><strong>Certified BIM Modeler</strong></div>
+  </div>
+</div>
+
+<!-- Achievements -->
+<div class="card">
+  <h2 class="h2">Achievements & Events</h2>
+  <div class="gallery">
+    <div class="gallery-item"><img src="images/gallery1.jpg"><strong>Electrical Site Engineer</strong></div>
+    <div class="gallery-item"><img src="images/gallery2.jpg"><strong>Round 21 Ceremony</strong></div>
+    <div class="gallery-item"><img src="images/gallery3.jpg"><strong>Round 19 Ceremony</strong></div>
+    <div class="gallery-item"><img src="images/gallery4.jpg"><strong>Mind Haus Project</strong></div>
+    <div class="gallery-item"><img src="images/gallery5.jpg"><strong>R19 Branch Manager</strong></div>
+    <div class="gallery-item"><img src="images/gallery6.jpg"><strong>Round 21 Ceremony</strong></div>
+    <div class="gallery-item"><img src="images/gallery7.jpg"><strong>Discussion Graduation Project</strong></div>
+    <div class="gallery-item"><img src="images/gallery8.jpg"><strong>Top Round 17 Electrical</strong></div>
+    <div class="gallery-item"><img src="images/gallery9.jpg"><strong>Last Day at University</strong></div>
+    <div class="gallery-item"><img src="images/gallery10.jpg"><strong>Great Moments</strong></div>
+    <div class="gallery-item"><img src="images/gallery11.jpg"><strong>Instructor in Round 19</strong></div>
+    <div class="gallery-item"><img src="images/gallery12.jpg"><strong>My Branch R19</strong></div>
+    <div class="gallery-item"><img src="images/gallery13.jpg"><strong>Electrical Construction Engineer</strong></div>
+  </div>
+</div>
+
+</div>
+
+<!-- Right Column -->
+<div class="right">
+  <div class="card avatar">
+    <img src="images/profile.jpg" alt="Hamdin Gamal">
+  </div>
+
+  <div class="card">
+    <h2 class="h2">Skills</h2>
+    <div class="skills">
+      <span>AutoCAD</span><span>Revit</span><span>ETAP</span>
+      <span>Dialux Evo</span><span>BIM</span><span>LV / ELV</span>
+    </div>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <a href="Hamdin_Gamal_CV.pdf" download class="btn-primary">Download Hamdin Gamal CV</a>
+  </div>
+
+  <div class="card small">
+    📞 01020549628<br>
+    📞 01066786598<br>
+    ✉️ hamdengamal@gmail.com
+  </div>
+</div>
+
+</div>
+
+<footer class="small" style="margin-top:30px;text-align:center">
+© 2026 Hamdin Gamal
+</footer>
+
+</body>
+</html>
